@@ -12,6 +12,7 @@ Django==4.0.1
 hyperlink==21.0.0
 idna==3.3
 incremental==21.3.0
+psycopg2-binary==2.9.3
 pyasn1==0.4.8
 pyasn1-modules==0.2.8
 pycparser==2.21
