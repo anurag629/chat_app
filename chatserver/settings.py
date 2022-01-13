@@ -73,10 +73,17 @@ WSGI_APPLICATION = 'chatserver.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
 
+DB_NAME = 'django_chat'
+DB_USER = 'django'
+DB_PASS = 'django'
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': DB_NAME,
+        'USER': DB_USER,
+        'PASSWORD': DB_PASS,
+        'HOST': '127.0.0.1',
+        'PORT': '5432',
     }
 }
 
